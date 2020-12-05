@@ -12,6 +12,7 @@ function sommaPropOggInArray(arr,nomeProprietà) {
   } return sommaProp;
 }
 
+
 var boxZucchine = [
   {
   varietà: "CUCURBITA PEPO",
@@ -65,6 +66,7 @@ var boxZucchine = [
   }
 ];
 
+
 //console.log(boxZucchine);
 /*
 var sommaPeso = 0;
@@ -80,6 +82,15 @@ for (let i = 0; i < boxZucchine.length; i++) {
 }
 alert(`La somma di tutte le zucchine è di ${sommaPeso} grammi, un bel CUCUZZARO `);
 */
+
+//Soluzione  ciclo forEach
+var somma = 0;
+boxZucchine.forEach(function(item){
+  somma += item.peso;
+});
+
+console.log(somma);
+//-------
 
 
 var totalePesoZucchine = sommaPropOggInArray (boxZucchine,"peso");

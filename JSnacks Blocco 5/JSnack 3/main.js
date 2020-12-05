@@ -26,6 +26,7 @@ function sommaPropOggInArray(arr,nomeProprietà) {
   } return sommaProp;
 }
 
+
 var boxZucchine = [
   {
   varietà: "CUCURBITA PEPO",
@@ -84,6 +85,21 @@ var secondaScelta = [];
 
 zucchinaSelect(boxZucchine,"lunghezza", 15 , primaScelta,secondaScelta)
 console.log(primaScelta,secondaScelta ); 
+/*
+//Sol ciclo forEach
+var sommaSecondaScelta = 0;
+secondaScelta.forEach(function (item) {
+  sommaSecondaScelta += item.peso;
+});
+
+var sommaPrimaScelta = 0;
+primaScelta.forEach(function (item) {
+  sommaPrimaScelta += item.peso;
+});
+
+console.log(sommaPrimaScelta,sommaSecondaScelta);
+//---------
+*/
 
 var pesoZucchinePrimaScelta = sommaPropOggInArray(primaScelta, "peso");
 console.log(`Peso totale delle  🥒  di Prima Scelta ${pesoZucchinePrimaScelta}`);

@@ -19,6 +19,7 @@ function specchiaStringa(strg){
 }
 
 
+
 var stringaUtente = prompt("Dammi una stringa io la specchierò per te");
 
 upPercase(stringaUtente);
